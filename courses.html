@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Courses - Hot Beans Web</title>
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="main.js" as="script">
+    <link rel="preload" href="Offices.jpg" as="image">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Hot Beans Web</a>
+            
+            <button class="mobile-nav-toggle" aria-controls="nav-menu" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <nav id="nav-menu" class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
+                    <li class="nav-item"><a href="#team" class="nav-link">Our Team</a></li>
+                    <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="form.html" class="btn btn-outline">Apply Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section courses-section">
+        <div class="container">
+            <h1 class="section-title">Available Courses</h1>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search courses..." class="search-input">
+                <button class="search-btn">Search</button>
+            </div>
+            
+            <div class="course-categories">
+                <h2 class="section-subtitle">Local College and University Courses</h2>
+                <div class="course-grid">
+                    <div class="course-card">
+                        <div class="course-content">
+
+                            <h3>Peterborough College</h3>
+                            <a href="https://www.peterborough.ac.uk/courses" target="_blank" class="btn">View Courses</a>
+
+                            <h3>Anglia Ruskin University</h3>
+                            <a href="https://www.anglia.ac.uk/study/undergraduate-courses" target="_blank" class="btn">View Courses</a>
+                            
+                            <h3>Coventry University</h3>
+                            <a href="https://www.coventry.ac.uk/course/undergraduate-computer-science" target="_blank" class="btn">View Courses</a>
+                            
+                            <h3>Northampton University</h3>
+                            <a href="https://www.northampton.ac.uk/courses/computer-science-bsc-hons/" target="_blank" class="btn">View Courses</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-subtitle"> Online Resources </h2>
+                <div class="course-tabs">
+                    <button class="tab-btn active" data-tab="frontend"> Frontend </button>
+                    <button class="tab-btn" data-tab="backend"> Backend </button>
+                    <button class="tab-btn" data-tab="design"> Design </button>
+                    <button class="tab-btn" data-tab="ecommerce"> E-commerce Solutions </button>
+                </div>
+
+                <div class="course-grid" id="frontend">
+                    <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp - Responsive Web Design Certification</a>
+                    <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011" target="_blank">Front-End Web Developer Nanodegree (Udacity)</a>
+                </div>
+
+                <div class="course-grid" id="backend">
+                    <a href="https://www.udemy.com/course/the-complete-nodejs-developer-course-2/" target="_blank">The Complete Node.js Developer Course (Udemy)</a>
+                    <a href="https://www.codecademy.com/learn/learn-nodejs" target="_blank">Learn Node.js (Codecademy)</a>
+                </div>
+
+                <div class="course-grid" id="ecommerce">
+                    <a href="https://www.shopify.com/learn" target="_blank">Shopify Academy - Free E-commerce Courses</a>
+                    <a href="https://www.udemy.com/course/ecommerce-business-models/" target="_blank">E-commerce Business Models (Udemy)</a>
+                </div>
+                
+                <div class="course-grid" id="frontend">
+                    <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp - Responsive Web Design Certification</a>
+                    <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011" target="_blank">Front-End Web Developer Nanodegree (Udacity)</a>
+                </div>
+
+                <div class="course-grid" id="design">
+                    <a href="https://www.coursera.org/specializations/ui-ux-design" target="_blank">Coursera - UI/UX Design</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

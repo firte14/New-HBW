@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Beans Web - Innovative Web Development Solutions</title>
+  <meta name="description" content="Join our team of passionate web developers at Hot Beans Web. We're hiring talented individuals to build the future of the web.">
+  
+  <link rel="stylesheet" href="styles.css">
+  
+
+  <style>
+    .hero {
+      opacity: 0;
+      animation: fadeIn 0.5s ease 0.1s forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Hot Beans Web</a>
+      
+      <button class="mobile-nav-toggle" aria-controls="nav-menu" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+        <span class="hamburger"></span>
+      </button>
+      
+      <nav id="nav-menu" class="nav-menu">
+          <ul class="nav-list">
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
+              <li class="nav-item"><a href="#team" class="nav-link">Our Team</a></li>
+              <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+              <li class="nav-item"><a href="form.html" class="btn btn-outline">Apply Now</a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Build Your Future in Web Development</h1>
+        <p class="hero-subtitle">Join our team of passionate developers creating innovative web solutions</p>
+        <div class="hero-cta">
+          <a href="careers.html" class="btn">View Open Positions</a>
+          <a href="#team" class="btn btn-outline">Meet Our Team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">Why Join Hot Beans Web?</h2>
+      
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">💻</div>
+          <h3>Cutting-Edge Projects</h3>
+          <p>Work with the latest technologies on projects that challenge and inspire you.</p>
+        </div>
+        
+        <div class="about-card">
+          <div class="about-icon">📈</div>
+          <h3>Career Growth</h3>
+          <p>We invest in your development with mentorship programs and learning opportunities.</p>
+        </div>
+        
+        <div class="about-card">
+          <div class="about-icon">🤝</div>
+          <h3>Supportive Culture</h3>
+          <p>Join a team that values collaboration, creativity, and work-life balance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="section team">
+    <div class="container">
+      <h2 class="section-title">Meet Our Trainees</h2>
+      <p class="section-subtitle">Get to know some of the talented developers who started their careers with us</p>
+      
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="Rosa_DeCastello.jpg" alt="Rosa DeCastello" class="team-img">
+          <div class="team-content">
+            <h3 class="team-name">Rosa DeCastello</h3>
+            <p class="team-position">Frontend Developer</p>
+            <div class="team-skills">
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">UI/UX</span>
+            </div>
+            <a href="rosa.html" class="btn">Read My Story</a>
+          </div>
+        </div>
+        
+        <div class="team-card">
+          <img src="Daniel_Lecroy.png" alt="Daniel Lecroy" class="team-img">
+          <div class="team-content">
+            <h3 class="team-name">Daniel Lecroy</h3>
+            <p class="team-position">Full Stack Developer</p>
+            <div class="team-skills">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">MongoDB</span>
+            </div>
+            <a href="daniel.html" class="btn">Read My Story</a>
+          </div>
+        </div>
+        
+        <div class="team-card">
+          <img src="Li Chang.PNG" alt="Li Chang" class="team-img">
+          <div class="team-content">
+            <h3 class="team-name">Li Chang</h3>
+            <p class="team-position">Backend Developer</p>
+            <div class="team-skills">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">AWS</span>
+            </div>
+            <a href="li.html" class="btn">Read My Story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Careers Preview Section -->
+  <section id="careers-preview" class="section careers">
+    <div class="container">
+      <h2 class="section-title">Current Openings</h2>
+      <p class="section-subtitle">We're looking for talented individuals to join our growing team</p>
+      
+      <div class="job-list">
+        <div class="job-card" data-category="development">
+          <div class="job-header">
+            <h3 class="job-title">Junior Web Developer</h3>
+            <span class="job-salary">£24k - £30k</span>
+          </div>
+          <div class="job-meta">
+            <span class="meta-item">📍 Peterborough</span>
+            <span class="meta-item">🕒 Full-time</span>
+            <span class="meta-item">💼 1+ years experience</span>
+          </div>
+          <p class="job-description">We're looking for a junior developer with passion for web technologies to join our team. You'll work on exciting projects while receiving mentorship from senior developers.</p>
+          <a href="careers.html#junior-developer" class="btn">View Details</a>
+        </div>
+        
+        <div class="job-card" data-category="design">
+          <div class="job-header">
+            <h3 class="job-title">UI/UX Designer</h3>
+            <span class="job-salary">£28k - £35k</span>
+          </div>
+          <div class="job-meta">
+            <span class="meta-item">📍 Northampton</span>
+            <span class="meta-item">🕒 Full-time</span>
+            <span class="meta-item">💼 2+ years experience</span>
+          </div>
+          <p class="job-description">Join our design team to create beautiful, intuitive interfaces for our clients. You'll collaborate with developers to bring designs to life.</p>
+          <a href="careers.html#ui-designer" class="btn">View Details</a>
+        </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: 3rem;">
+        <a href="careers.html" class="btn">View All Positions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Preview Section -->
+  <section id="courses-preview" class="section courses">
+    <div class="container">
+      <h2 class="section-title">Recommended Courses</h2>
+      <p class="section-subtitle">Boost your skills with these hand-picked learning resources</p>
+      
+      <div class="course-grid">
+        <div class="course-card">
+          <img src="images/frontend-course.webp" alt="Frontend Development Course" class="course-img">
+          <div class="course-content">
+            <div class="course-provider">🎓 FreeCodeCamp</div>
+            <h3 class="course-title">Responsive Web Design Certification</h3>
+            <p class="course-desc">Learn the fundamentals of HTML and CSS to build responsive websites.</p>
+            <div class="course-meta">
+              <span>⏱️ 300 hours</span>
+              <span>⭐ 4.8/5</span>
+            </div>
+            <a href="courses.html#frontend" class="btn" style="margin-top: 1rem;">View Course</a>
+          </div>
+        </div>
+        
+        <div class="course-card">
+          <img src="images/javascript-course.webp" alt="JavaScript Course" class="course-img">
+          <div class="course-content">
+            <div class="course-provider">🎓 Udemy</div>
+            <h3 class="course-title">The Complete JavaScript Course 2024</h3>
+            <p class="course-desc">Master JavaScript with this comprehensive course covering ES6+ and modern practices.</p>
+            <div class="course-meta">
+              <span>⏱️ 68 hours</span>
+              <span>⭐ 4.7/5</span>
+            </div>
+            <a href="courses.html#javascript" class="btn" style="margin-top: 1rem;">View Course</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: 3rem;">
+        <a href="courses.html" class="btn">Browse All Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Start Your Journey?</h2>
+        <p>Apply now to join our team of talented developers</p>
+        <div class="cta-buttons">
+          <a href="apply.html" class="btn">Apply Now</a>
+          <a href="contact.html" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">Hot Beans Web</div>
+          <p>Building innovative web solutions since 2007. We're passionate about technology and helping developers grow.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="Twitter">t</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link" aria-label="GitHub">gh</a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="team/">Our Team</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <address>
+            75 Broadway<br>
+            Peterborough<br>
+            PE1 1SY<br>
+            United Kingdom<br><br>
+            <a href="tel:+441733762255">01733 762255</a><br>
+            <a href="mailto:careers@hotbeansweb.co.uk">careers@hotbeansweb.co.uk</a>
+          </address>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Hot Beans Web. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+  
+</body>
+</html>
