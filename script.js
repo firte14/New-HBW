@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
         `).join('')
         : '<p>No matching jobs found. Please try different search criteria.</p>';
 
-      // Re-attach view details event listeners
+    
       document.querySelectorAll('.view-details').forEach(btn => {
         btn.addEventListener('click', (e) => {
           e.preventDefault();
@@ -203,7 +203,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
 
-    // Function to show job details in modal
     function showJobDetails(jobId) {
       const job = jobs.find(j => j.id === jobId);
       if (!job) return;
@@ -240,7 +239,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
       modalContent.style.display = 'block';
 
-      // Close modal
       document.querySelector('.modal-close').addEventListener('click', () => {
         modalContent.style.display = 'none';
       });
@@ -252,7 +250,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
 
-    // Filter jobs
     const jobSearch = document.querySelector('#jobSearch');
     const locationFilter = document.querySelector('#locationFilter');
     const typeFilter = document.querySelector('#typeFilter');
@@ -274,7 +271,6 @@ document.addEventListener('DOMContentLoaded', function() {
       displayJobs(filteredJobs);
     }
 
-    // Event Listeners for Jobs
     if (jobSearchBtn) jobSearchBtn.addEventListener('click', filterJobs);
     if (jobSearch) jobSearch.addEventListener('keyup', (e) => {
       if (e.key === 'Enter') filterJobs();
@@ -282,12 +278,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (locationFilter) locationFilter.addEventListener('change', filterJobs);
     if (typeFilter) typeFilter.addEventListener('change', filterJobs);
 
-    // Initialize job display
     if (document.querySelector('.careers')) {
       displayJobs(jobs);
     }
 
-    // Courses Page: Course Data and Filtering
     if (document.querySelector('.courses')) {
       const courses = [
         // Local College and University Courses
@@ -333,7 +327,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       ];
 
-      // Function to display online courses
       function displayCourses(filteredCourses) {
         const courseList = document.querySelector('#onlineCourses');
         if (!courseList) return;
@@ -358,7 +351,6 @@ document.addEventListener('DOMContentLoaded', function() {
           : '<p>No matching online courses found. Please try different search criteria.</p>';
       }
 
-      // Filter courses (local and online)
       const courseSearch = document.querySelector('#courseSearch');
       const courseTabs = document.querySelectorAll('.tab-btn');
       const courseSearchBtn = document.querySelector('#courseSearchBtn');
@@ -378,7 +370,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         displayCourses(filteredCourses);
 
-        // Update local courses visibility
         const localCourseCards = document.querySelectorAll('.course-grid:not(#onlineCourses) .course-card');
         localCourseCards.forEach(card => {
           const title = card.querySelector('.course-title').textContent.toLowerCase();
@@ -407,7 +398,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       });
 
-      // Initialize course display
       displayCourses(courses);
     }
   document.getElementById('applicationForm').addEventListener('submit', function(event) {
@@ -429,17 +419,14 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   function submitApplication(event) {
-    event.preventDefault(); // prevent page reload
-    // Here you could add code to send form data to a server
+    event.preventDefault();
 
     // Show the success message
     document.getElementById('successMessage').style.display = 'block';
 
-    // Optionally reset the form
     document.getElementById('applicationForm').reset();
   }
 
-    // Form Validation and Multi-Step Form
     if (document.getElementById('applicationForm')) {
       const form = document.getElementById('applicationForm');
       const formSteps = document.querySelectorAll('.form-step');
@@ -482,8 +469,6 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         });
       });
-
-      
 
       prevButtons.forEach(button => {
         button.addEventListener('click', (e) => {
