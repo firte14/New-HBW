@@ -1,101 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Courses - Hot Beans Web</title>
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="preload" href="main.js" as="script">
-    <link rel="preload" href="Offices.jpg" as="image">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - Hot Beans Web</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">Hot Beans Web</a>
-            
-            <button class="mobile-nav-toggle" aria-controls="nav-menu" aria-expanded="false">
-                <span class="sr-only">Menu</span>
-                <span class="hamburger"></span>
-            </button>
-            
-            <nav id="nav-menu" class="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
-                    <li class="nav-item"><a href="#team" class="nav-link">Our Team</a></li>
-                    <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
-                    <li class="nav-item"><a href="form.html" class="btn btn-outline">Apply Now</a></li>
-                </ul>
-            </nav>
+  <header class="header">
+    <div class="container">
+      <nav class="nav-container">
+        <a href="index.html" class="logo">Hot Beans Web</a>
+        <button class="mobile-nav-toggle">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
+          <li class="nav-item"><a href="policy.html" class="nav-link">Policy</a></li>
+          <li class="nav-item"><a href="courses.html" class="nav-link active">Courses</a></li>
+          <li class="nav-item"><a href="form.html" class="nav-link">Apply Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses section">
+      <div class="container">
+        <h2 class="section-title">Available Courses</h2>
+        <div class="search-bar">
+          <input type="text" class="search-input" id="courseSearch" placeholder="Search courses...">
+          <button class="search-btn">Search</button>
         </div>
-    </header>
-
-    <main class="section courses-section">
-        <div class="container">
-            <h1 class="section-title">Available Courses</h1>
-            
-            <div class="search-bar">
-                <input type="text" placeholder="Search courses..." class="search-input">
-                <button class="search-btn">Search</button>
+        <h3 class="section-title">Local College and University Courses</h3>
+        <div class="course-grid">
+          <div class="course-card">
+            <div class="course-content">
+              <div class="course-provider">🏫 Peterborough College</div>
+              <h4 class="course-title">Various IT Courses</h4>
+              <p class="course-desc">Comprehensive program covering HTML, CSS, and JavaScript.</p>
+              <div class="course-meta">
+                <span>⏱️ 1 year</span>
+                <span>⭐ 4.5/5</span>
+              </div>
+              <a href="https://www.peterborough.ac.uk" class="btn" target="_blank">View Course</a>
             </div>
-            
-            <div class="course-categories">
-                <h2 class="section-subtitle">Local College and University Courses</h2>
-                <div class="course-grid">
-                    <div class="course-card">
-                        <div class="course-content">
-
-                            <h3>Peterborough College</h3>
-                            <a href="https://www.peterborough.ac.uk/courses" target="_blank" class="btn">View Courses</a>
-
-                            <h3>Anglia Ruskin University</h3>
-                            <a href="https://www.anglia.ac.uk/study/undergraduate-courses" target="_blank" class="btn">View Courses</a>
-                            
-                            <h3>Coventry University</h3>
-                            <a href="https://www.coventry.ac.uk/course/undergraduate-computer-science" target="_blank" class="btn">View Courses</a>
-                            
-                            <h3>Northampton University</h3>
-                            <a href="https://www.northampton.ac.uk/courses/computer-science-bsc-hons/" target="_blank" class="btn">View Courses</a>
-
-                        </div>
-                    </div>
-                </div>
-
-                <h2 class="section-subtitle"> Online Resources </h2>
-                <div class="course-tabs">
-                    <button class="tab-btn active" data-tab="frontend"> Frontend </button>
-                    <button class="tab-btn" data-tab="backend"> Backend </button>
-                    <button class="tab-btn" data-tab="design"> Design </button>
-                    <button class="tab-btn" data-tab="ecommerce"> E-commerce Solutions </button>
-                </div>
-
-                <div class="course-grid" id="frontend">
-                    <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp - Responsive Web Design Certification</a>
-                    <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011" target="_blank">Front-End Web Developer Nanodegree (Udacity)</a>
-                </div>
-
-                <div class="course-grid" id="backend">
-                    <a href="https://www.udemy.com/course/the-complete-nodejs-developer-course-2/" target="_blank">The Complete Node.js Developer Course (Udemy)</a>
-                    <a href="https://www.codecademy.com/learn/learn-nodejs" target="_blank">Learn Node.js (Codecademy)</a>
-                </div>
-
-                <div class="course-grid" id="ecommerce">
-                    <a href="https://www.shopify.com/learn" target="_blank">Shopify Academy - Free E-commerce Courses</a>
-                    <a href="https://www.udemy.com/course/ecommerce-business-models/" target="_blank">E-commerce Business Models (Udemy)</a>
-                </div>
-                
-                <div class="course-grid" id="frontend">
-                    <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp - Responsive Web Design Certification</a>
-                    <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011" target="_blank">Front-End Web Developer Nanodegree (Udacity)</a>
-                </div>
-
-                <div class="course-grid" id="design">
-                    <a href="https://www.coursera.org/specializations/ui-ux-design" target="_blank">Coursera - UI/UX Design</a>
-                </div>
+          </div>
+          <div class="course-card">
+            <div class="course-content">
+              <div class="course-provider">🏫 Anglia Ruskin University</div>
+              <h4 class="course-title">BSc Computer Science</h4>
+              <p class="course-desc">Degree program with web development specialization.</p>
+              <div class="course-meta">
+                <span>⏱️ 3 years</span>
+                <span>⭐ 4.7/5</span>
+              </div>
+              <a href="https://www.aru.ac.uk" class="btn" target="_blank">View Course</a>
             </div>
+          </div>
+          <div class="course-card">
+            <div class="course-content">
+              <div class="course-provider">🏫 Coventry University</div>
+              <h4 class="course-title">BSc Computer Science</h4>
+              <p class="course-desc">Equipped with skills to drive the digital revolution</p>
+              <div class="course-meta">
+                <span>⏱️ 3-4 years</span>
+                <span>⭐ 4.6/5</span>
+              </div>
+              <a href="https://www.coventry.ac.uk/course-structure/ug/eec/computer-science-mscibsc-hons/?term=2025-26" class="btn" target="_blank">View Course</a>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-content">
+              <div class="course-provider">🏫 Northampton University</div>
+              <h4 class="course-title">BSc Computer Science</h4>
+              <p class="course-desc">Emphasis on practical skills for implementation of a variety of applications</p>
+              <div class="course-meta">
+                <span>⏱️ 3 years</span>
+                <span>⭐ 4.4/5</span>
+              </div>
+              <a href="https://www.northampton.ac.uk/courses/computer-science-bsc-hons/" class="btn" target="_blank">View Course</a>
+            </div>
+          </div>
         </div>
-    </main>
+        <h3 class="section-title">Online Resources</h3>
+        <div class="course-grid">
+          <div class="course-card">
+            <div class="course-content">
+              <div class="course-provider">Backend Development</div>
+              <h4 class="course-title">Udemy</h4>
+              <a href="https://www.udemy.com/course/the-complete-nodejs-developer-course-2/" class="btn" target="_blank">The Complete Node.js Developer Course (Udemy)</a><br/>
+
+              <h4 class="course-title">Codecademy</h4>
+              <a href="https://www.codecademy.com/learn/learn-nodejs" class="btn" target="_blank">Learn Node.js (Codecademy)</a>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-content">
+              <div class="course-provider">E-commerce Solutions</div>
+              <h4 class="course-title">Shopify</h4>
+              <a href="https://www.shopify.com/learn" class="btn" target="_blank">Shopify Academy - Free E-commerce Courses</a></br>
+
+              <h4 class="course-title">Udemy</h4>
+              <a href="https://www.udemy.com/course/ecommerce-business-models/" class="btn" target="_blank">E-commerce Business Models (Udemy)</a>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-content">
+              <div class="course-provider">Frontend Development</div>
+              <h4 class="course-title">FreeCodeCamp</h4>
+              <a href="https://www.freecodecamp.org/" class="btn" target="_blank">FreeCodeCamp - Responsive Web Design Certification</a></br>
+
+              <h4 class="course-title">Udacity</h4>
+              <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011" class ="btn" target="_blank">Front-End Web Developer Nanodegree (Udacity)</a>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-content">
+              <div class="course-provider">UI/UX Design</div>
+              <h4 class="course-title">Coursera</h4>
+              <p class="course-desc">Focus on UI/UX and web design principles.</p>
+              <a href="https://www.coursera.org/specializations/ui-ux-design" class="btn" target="_blank">Coursera - UI/UX Design</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-logo">Hot Beans Web</h3>
+          <p>Building innovative web solutions since 2007. We're passionate about technology and helping developers grow.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">f</a>
+            <a href="#" class="social-link">t</a>
+            <a href="#" class="social-link">in</a>
+            <a href="#" class="social-link">gh</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="policy.html">Policy</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="policy.html">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Contact Us</h3>
+          <p>75 Broadway<br>Peterborough<br>PE1 1SY<br>United Kingdom</p>
+          <a href="tel:+441733762255">01733 762255</a><br>
+          <a href="mailto:careers@hotbeansweb.co.uk">careers@hotbeansweb.co.uk</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Hot Beans Web. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

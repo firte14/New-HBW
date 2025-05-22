@@ -371,7 +371,43 @@
     border-radius: 50px;
     font-size: 0.8rem;
   }
-  
+  /* Modal Styles */
+#jobModal, #courseModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.job-details-content, .course-details-content {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 800px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--dark);
+}
+
+.modal-close:hover {
+  color: var(--accent);
+}
   /* Careers Section */
   .careers {
     background-color: white;
@@ -553,7 +589,12 @@
 .search-btn:hover {
     background-color: var(--primary-light);
 }
-  
+#successMessage {
+      display: none;
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+}
   /* Application Form */
   .apply {
     background-color: white;
@@ -680,6 +721,25 @@
     justify-content: space-between;
     margin-top: 2rem;
   }
+  button {
+    width: 50%;
+    padding: 10px;
+            background-color: #4d5b50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+  }
+        
+  button:hover {
+            background-color: #3d8d4f;
+  }
+  .response-message {
+            margin-top: 20px;
+            text-align: center;
+            color: green;
+ }
+        
   
   /* Footer */
   .footer {
